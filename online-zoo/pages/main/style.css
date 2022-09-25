@@ -25,11 +25,19 @@ body {
   background-color: #000;
   top: 0;
   left: 0;
+  
 }
 
 .container {
   width: 1600px;
   margin: 0 auto;
+}
+
+.header__image-logo {
+  background-image: url(C:/rs_school/getgitgood-JSFE2022Q3/online-zoo/assets/images/bamboo.png);
+  background-repeat: no-repeat;
+  background-position-y: 18px;
+  background-position-x: 7px;
 }
 
 .header__logo {
@@ -43,19 +51,25 @@ body {
   border-radius: 2px;
   text-align: center;
   padding: 2px;
-  background-image: url(/online-zoo/assets/images/GiantPanda.png);
+}
+
+
+h1 {
+  margin: 0;
 }
 
 .header__block {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 
 .header__wrapper {
+  position: relative;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -68,12 +82,32 @@ body {
   font-weight: 500;
   text-decoration: none;
   padding: 29px;
+  position: relative;
+  user-select: none;
+}
+
+.nav__link:after {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: '';
+  opacity: 1;
 }
 
 .nav__link.active {
-  font-weight: 500;
-  color: #F9804B
+  color:#F9804B
+}
 
+.nav__link:hover {
+  color: #F9804B;
+  transition: all 0.  2s ease;
+}
+
+.nav__link.hover::after {
+  opacity: 0.5;
+  color: #fff;
 }
 
 
@@ -86,3 +120,87 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+/* header end */
+
+
+/* intro start */
+
+.intro {
+  background: url("C:/rs_school/getgitgood-JSFE2022Q3/online-zoo/assets/images/GiantPanda.jpg") no-repeat;
+  background-position: center;
+}
+
+.intro__content {
+  height: 768px;
+  display: flex;
+  align-items:center;
+}
+
+.intro__block {
+  
+}
+
+
+.intro__bg {
+  
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+.circle {
+  display: block;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: 0px;
+  border-radius: 50%;
+  height: 465px;
+  width: 465px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: calc(50% - 465px/2 + 239.5px);
+  top: 92px;
+}
+
+
+.intro__title {
+  display: inline-flexbox;
+  font-size: 106px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 75%;
+  left: 73px;
+  text-align: center;
+}
+
+
+.btn {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+  text-decoration: none;
+  border: 1px;
+  line-height: normal;
+  min-width: 298px;
+  min-height: 54px;
+  border-radius: 25px;
+  padding: 16px 1px 16px 5px;
+  position: relative;
+  justify-content: center;
+  
+}
+
+.word__selection {
+  color: #FFEE2E
+}
+
+
+
+/* intro end */
